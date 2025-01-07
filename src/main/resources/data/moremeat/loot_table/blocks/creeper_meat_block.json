@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "items": ["minecraft:wooden_shovel", "minecraft:stone_shovel", "minecraft:iron_shovel","minecraft:golden_shovel", "minecraft:diamond_shovel", "minecraft:netherite_shovel"]
+                  }
+                }
+              ],
+              "name": "moremeat:creeper_meat_block"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "moremeat:creeper_meat",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 3,
+                    "max": 8
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

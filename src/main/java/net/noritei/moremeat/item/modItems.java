@@ -9,7 +9,10 @@ import net.noritei.moremeat.moremeat;
 public class modItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(moremeat.modId);
 
-    public static final DeferredItem<Item> CREEPERMEAT = ITEMS.register("creeper_meat",
+    public static final DeferredItem<Item> CREEPER_MEAT = ITEMS.register("creeper_meat",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> COOKED_CREEPER_MEAT = ITEMS.register("cooked_creeper_meat",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {

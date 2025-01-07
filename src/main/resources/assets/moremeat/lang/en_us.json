@@ -1,5 +1,9 @@
 {
-  "itemGroup.examplemod": "Example Mod Tab",
-  "block.examplemod.example_block": "Example Block",
-  "item.moremeat.creeper_meat": "Creeper Meat"
+  "item.moremeat.creeper_meat": "Creeper Meat",
+  "item.moremeat.cooked_creeper_meat": "Cooker Creeper Meat",
+
+  "block.moremeat.creeper_meat_block": "Creeper Meat Block",
+
+  "creativetab.moremeat.more_meat_items": "Meat Items",
+  "creativetab.moremeat.more_meat_blocks": "Meat Blocks"
 }

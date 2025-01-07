@@ -1,7 +1,8 @@
 package net.noritei.moremeat;
 
 import net.minecraft.world.item.CreativeModeTabs;
-import net.neoforged.neoforge.common.CreativeModeTabRegistry;
+import net.noritei.moremeat.block.modBlocks;
+import net.noritei.moremeat.item.modCreativeModeTabs;
 import net.noritei.moremeat.item.modItems;
 import org.slf4j.Logger;
 
@@ -36,7 +37,10 @@ public class moremeat
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
+        modCreativeModeTabs.register(modEventBus);
+
         modItems.register(modEventBus);
+        modBlocks.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
@@ -58,7 +62,12 @@ public class moremeat
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
-            event.accept(modItems.CREEPERMEAT);
+            event.accept(modItems.CREEPER_MEAT);
+            event.accept(modItems.COOKED_CREEPER_MEAT);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(modBlocks.CREEPER_MEAT_BLOCK);
         }
     }
 

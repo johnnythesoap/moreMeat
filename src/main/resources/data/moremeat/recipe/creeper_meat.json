@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "food",
+  "ingredients": [
+    {
+      "item": "moremeat:creeper_meat_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "moremeat:creeper_meat"
+  }
+}
