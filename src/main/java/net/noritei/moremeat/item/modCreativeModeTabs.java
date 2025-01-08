@@ -23,6 +23,7 @@ public class modCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(modItems.CREEPER_MEAT);
                         output.accept(modItems.COOKED_CREEPER_MEAT);
+                        output.accept(modItems.FLESH);
                     }).build());
 
     public static final Supplier<CreativeModeTab> MORE_MEAT_BLOCKS = CREATIVE_MODE_TAB.register("more_meat_blocks",
@@ -32,6 +33,8 @@ public class modCreativeModeTabs {
                     .title(Component.translatable("creativetab.moremeat.more_meat_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(modBlocks.CREEPER_MEAT_BLOCK);
+                        output.accept(modBlocks.MEAT_ORE);
+                        output.accept(modBlocks.MEAT_STONE);
                     }).build());
 
 

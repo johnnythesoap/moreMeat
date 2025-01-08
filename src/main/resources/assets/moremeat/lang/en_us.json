@@ -1,8 +1,11 @@
 {
   "item.moremeat.creeper_meat": "Creeper Meat",
-  "item.moremeat.cooked_creeper_meat": "Cooker Creeper Meat",
+  "item.moremeat.cooked_creeper_meat": "Cooked Creeper Meat",
+  "item.moremeat.flesh": "Flesh",
 
   "block.moremeat.creeper_meat_block": "Creeper Meat Block",
+  "block.moremeat.meat_ore": "Meat Ore",
+  "block.moremeat.meat_stone": "Meat Stone",
 
   "creativetab.moremeat.more_meat_items": "Meat Items",
   "creativetab.moremeat.more_meat_blocks": "Meat Blocks"

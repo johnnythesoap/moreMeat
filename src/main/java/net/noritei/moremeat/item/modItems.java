@@ -15,6 +15,9 @@ public class modItems {
     public static final DeferredItem<Item> COOKED_CREEPER_MEAT = ITEMS.register("cooked_creeper_meat",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> FLESH = ITEMS.register("flesh",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

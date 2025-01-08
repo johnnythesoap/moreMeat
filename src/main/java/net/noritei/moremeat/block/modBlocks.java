@@ -1,8 +1,10 @@
 package net.noritei.moremeat.block;
 
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
@@ -21,6 +23,21 @@ public class modBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(1f, 0f)
                     .sound(SoundType.NETHERRACK)
+            ));
+
+    public static final DeferredBlock<Block> MEAT_STONE = registerBlock("meat_stone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(4f, 1f)
+                    .sound(SoundType.NETHERRACK)
+            ));
+
+    public static final DeferredBlock<Block> MEAT_ORE = registerBlock("meat_ore",
+            () -> new DropExperienceBlock(UniformInt.of(3, 6),
+                    BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(4f, 2f)
+                    .sound(SoundType.STONE)
             ));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
