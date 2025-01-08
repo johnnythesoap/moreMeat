@@ -18,7 +18,7 @@ public class modCreativeModeTabs {
 
     public static final Supplier<CreativeModeTab> MORE_MEAT_ITEMS = CREATIVE_MODE_TAB.register("more_meat_items",
             () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(modItems.CREEPER_MEAT.get()))
+                    .icon(() -> new ItemStack(modItems.FLESH.get()))
                     .title(Component.translatable("creativetab.moremeat.more_meat_items"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(modItems.CREEPER_MEAT);
@@ -28,7 +28,7 @@ public class modCreativeModeTabs {
 
     public static final Supplier<CreativeModeTab> MORE_MEAT_BLOCKS = CREATIVE_MODE_TAB.register("more_meat_blocks",
             () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(modBlocks.CREEPER_MEAT_BLOCK.get()))
+                    .icon(() -> new ItemStack(modBlocks.MEAT_STONE.get()))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(moremeat.modId, "more_meat_items"))
                     .title(Component.translatable("creativetab.moremeat.more_meat_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
