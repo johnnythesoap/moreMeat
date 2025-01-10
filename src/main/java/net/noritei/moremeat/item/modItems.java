@@ -4,6 +4,7 @@ import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import net.noritei.moremeat.item.custom.graterItem;
 import net.noritei.moremeat.moremeat;
 
 public class modItems {
@@ -17,6 +18,9 @@ public class modItems {
 
     public static final DeferredItem<Item> FLESH = ITEMS.register("flesh",
             () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> GRATER = ITEMS.register("grater",
+            () -> new graterItem( new Item.Properties().durability(32)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
