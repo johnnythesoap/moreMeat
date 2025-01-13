@@ -36,6 +36,7 @@ public class modCreativeModeTabs {
                         output.accept(modBlocks.CREEPER_MEAT_BLOCK);
                         output.accept(modBlocks.MEAT_ORE);
                         output.accept(modBlocks.MEAT_STONE);
+                        output.accept(modBlocks.COOKER);
                     }).build());
 
 

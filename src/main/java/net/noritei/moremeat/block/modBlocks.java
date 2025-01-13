@@ -10,6 +10,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import net.noritei.moremeat.block.custom.cooker;
 import net.noritei.moremeat.item.modItems;
 import net.noritei.moremeat.moremeat;
 
@@ -38,6 +39,11 @@ public class modBlocks {
                     .requiresCorrectToolForDrops()
                     .strength(4f, 2f)
                     .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> COOKER = registerBlock("cooker",
+            () -> new cooker(BlockBehaviour.Properties.of()
+                    .strength(2f)
             ));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
