@@ -33,4 +33,11 @@ public class modFoodProperties {
             .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200), 0.1f)
             .build();
 
+    public static final FoodProperties SIP_OF_FLESH = new FoodProperties.Builder()
+            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 200), 0.9f)
+            .effect(() -> new MobEffectInstance(MobEffects.HARM, 20), 0.2f)
+            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 2), 0.2f)
+            .effect(() -> new MobEffectInstance(MobEffects.WEAKNESS, 200), 0.2f)
+            .build();
+
 }

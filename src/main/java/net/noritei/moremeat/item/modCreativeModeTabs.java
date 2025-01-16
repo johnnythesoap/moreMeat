@@ -25,6 +25,7 @@ public class modCreativeModeTabs {
                         output.accept(modItems.COOKED_CREEPER_MEAT);
                         output.accept(modItems.FLESH);
                         output.accept(modItems.GRATER);
+                        output.accept(modItems.SIP_OF_FLESH);
                     }).build());
 
     public static final Supplier<CreativeModeTab> MORE_MEAT_BLOCKS = CREATIVE_MODE_TAB.register("more_meat_blocks",
